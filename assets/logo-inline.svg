@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1070 200" width="100%">
+  <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',Menlo,monospace" font-size="12" fill="white">
+    <!-- recursive -->
+    <text x="0" y="16" xml:space="preserve">                                                           ███</text>
+    <text x="0" y="32" xml:space="preserve">                                                          ░░░</text>
+    <text x="0" y="48" xml:space="preserve"> ████████   ██████   ██████  █████ ████ ████████   █████  ████  █████ █████  ██████</text>
+    <text x="0" y="64" xml:space="preserve">░░███░░███ ███░░███ ███░░███░░███ ░███ ░░███░░███ ███░░  ░░███ ░░███ ░░███  ███░░███</text>
+    <text x="0" y="80" xml:space="preserve"> ░███ ░░░ ░███████ ░███ ░░░  ░███ ░███  ░███ ░░░ ░░█████  ░███  ░███  ░███ ░███████</text>
+    <text x="0" y="96" xml:space="preserve"> ░███     ░███░░░  ░███  ███ ░███ ░███  ░███      ░░░░███ ░███  ░░███ ███  ░███░░░</text>
+    <text x="0" y="112" xml:space="preserve"> █████    ░░██████ ░░██████  ░░████████ █████     ██████  █████  ░░█████   ░░██████</text>
+    <text x="0" y="128" xml:space="preserve">░░░░░      ░░░░░░   ░░░░░░    ░░░░░░░░ ░░░░░     ░░░░░░  ░░░░░    ░░░░░     ░░░░░░</text>
+    <!-- - -->
+    <text x="590" y="80" xml:space="preserve"> ░░░░░░</text>
+    <text x="590" y="96" xml:space="preserve"> ██████</text>
+    <text x="590" y="112" xml:space="preserve"> ░░░░░░</text>
+    <!-- improve -->
+    <text x="640" y="16" xml:space="preserve">     ███</text>
+    <text x="640" y="32" xml:space="preserve">    ░░░</text>
+    <text x="640" y="48" xml:space="preserve">    ████  █████████████   ████████  ████████   ██████  █████ █████  ██████</text>
+    <text x="640" y="64" xml:space="preserve">   ░░███ ░░███░░███░░███ ░░███░░███░░███░░███ ███░░███░░███ ░░███  ███░░███</text>
+    <text x="640" y="80" xml:space="preserve">    ░███  ░███ ░███ ░███  ░███ ░███ ░███ ░░░ ░███ ░███ ░███  ░███ ░███████</text>
+    <text x="640" y="96" xml:space="preserve">    ░███  ░███ ░███ ░███  ░███ ░███ ░███     ░███ ░███ ░░███ ███  ░███░░░</text>
+    <text x="640" y="112" xml:space="preserve">    █████ █████░███ █████ ░███████  █████    ░░██████   ░░█████   ░░██████</text>
+    <text x="640" y="128" xml:space="preserve">   ░░░░░ ░░░░░ ░░░ ░░░░░  ░███░░░  ░░░░░      ░░░░░░     ░░░░░     ░░░░░░</text>
+    <text x="640" y="144" xml:space="preserve">                          ░███</text>
+    <text x="640" y="160" xml:space="preserve">                          █████</text>
+    <text x="640" y="176" xml:space="preserve">                         ░░░░░</text>
+  </g>
+</svg>

@@ -1,0 +1,113 @@
+{
+  "session_id": "multi_step_lookup",
+  "timestamp": "2026-03-25T11:06:23.679184+00:00",
+  "duration_s": 6.76,
+  "success": true,
+  "error": null,
+  "output": "Great! I found the smartwatch order for Megan Anderson (username: manderson). Here's the status:\n\n**Order #47652**\n- Product: Smartwatch\n- Quantity: 1\n- Price: $199.99\n- **Status: Processing**\n\nThe order is currently being processed and should be prepared for shipment soon.",
+  "feedback": null,
+  "git_branch": "main",
+  "git_commit": "4baf004",
+  "metadata": {
+    "scenario": "multi_step_lookup"
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a customer support chat bot for an online retailer called TechNova.\nYour job is to help users look up their account, orders, and cancel orders.\nBe helpful and brief in your responses.\nYou have access to a set of tools, but only use them when needed.\nIf you do not have enough information to use a tool correctly, ask a user follow up questions to get the required inputs.\nDo not call any of the tools unless you have the required data from a user.\n",
+      "timestamp": "2026-03-25T11:06:20.085284+00:00"
+    },
+    {
+      "role": "user",
+      "content": "What's the status of the smartwatch order? The customer username is manderson",
+      "timestamp": "2026-03-25T11:06:20.085367+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I'll help you check the status of the smartwatch order for customer manderson. Let me first look up the customer account and then find their orders.",
+      "timestamp": "2026-03-25T11:06:20.085434+00:00",
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "prompt_tokens": 835,
+        "completion_tokens": 103,
+        "total_tokens": 938
+      },
+      "tool_calls": [
+        {
+          "id": "toolu_01DpVdcCvyknwTVx8EzXQmY8",
+          "function": {
+            "name": "get_user",
+            "arguments": "{\"key\": \"username\", \"value\": \"manderson\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll help you check the status of the smartwatch order for customer manderson. Let me first look up the customer account and then find their orders.\nToolUseBlock(id='toolu_01DpVdcCvyknwTVx8EzXQmY8', caller=DirectCaller(type='direct'), input={'key': 'username', 'value': 'manderson'}, name='get_user', type='tool_use')",
+      "timestamp": "2026-03-25T11:06:21.556246+00:00"
+    },
+    {
+      "role": "tool",
+      "content": "{\"id\": \"8259147\", \"name\": \"Megan Anderson\", \"email\": \"megana@gmail.com\", \"phone\": \"666-777-8888\", \"username\": \"manderson\"}",
+      "timestamp": "2026-03-25T11:06:21.556258+00:00",
+      "tool_call_id": "toolu_01DpVdcCvyknwTVx8EzXQmY8"
+    },
+    {
+      "role": "assistant",
+      "content": "",
+      "timestamp": "2026-03-25T11:06:21.556321+00:00",
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "prompt_tokens": 996,
+        "completion_tokens": 59,
+        "total_tokens": 1055
+      },
+      "tool_calls": [
+        {
+          "id": "toolu_01WEgn2pUypEmABiyihAN9k5",
+          "function": {
+            "name": "get_customer_orders",
+            "arguments": "{\"customer_id\": \"8259147\"}"
+          }
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": "I'll help you check the status of the smartwatch order for customer manderson. Let me first look up the customer account and then find their orders.\nToolUseBlock(id='toolu_01DpVdcCvyknwTVx8EzXQmY8', caller=DirectCaller(type='direct'), input={'key': 'username', 'value': 'manderson'}, name='get_user', type='tool_use')",
+      "timestamp": "2026-03-25T11:06:23.678602+00:00"
+    },
+    {
+      "role": "tool",
+      "content": "{\"id\": \"8259147\", \"name\": \"Megan Anderson\", \"email\": \"megana@gmail.com\", \"phone\": \"666-777-8888\", \"username\": \"manderson\"}",
+      "timestamp": "2026-03-25T11:06:23.678612+00:00",
+      "tool_call_id": "toolu_01DpVdcCvyknwTVx8EzXQmY8"
+    },
+    {
+      "role": "assistant",
+      "content": "ToolUseBlock(id='toolu_01WEgn2pUypEmABiyihAN9k5', caller=DirectCaller(type='direct'), input={'customer_id': '8259147'}, name='get_customer_orders', type='tool_use')",
+      "timestamp": "2026-03-25T11:06:23.678640+00:00"
+    },
+    {
+      "role": "tool",
+      "content": "[{\"id\": \"47652\", \"customer_id\": \"8259147\", \"product\": \"Smartwatch\", \"quantity\": 1, \"price\": 199.99, \"status\": \"Processing\"}]",
+      "timestamp": "2026-03-25T11:06:23.678648+00:00",
+      "tool_call_id": "toolu_01WEgn2pUypEmABiyihAN9k5"
+    },
+    {
+      "role": "assistant",
+      "content": "Great! I found the smartwatch order for Megan Anderson (username: manderson). Here's the status:\n\n**Order #47652**\n- Product: Smartwatch\n- Quantity: 1\n- Price: $199.99\n- **Status: Processing**\n\nThe order is currently being processed and should be prepared for shipment soon.",
+      "timestamp": "2026-03-25T11:06:23.678656+00:00",
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "prompt_tokens": 1113,
+        "completion_tokens": 79,
+        "total_tokens": 1192
+      }
+    }
+  ]
+}

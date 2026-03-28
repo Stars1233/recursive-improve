@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recursive-improve"
+version = "0.1.0"
+description = "Recursively improve AI agents from their traces"
+readme = "README.md"
+requires-python = ">=3.12"
+license = {text = "Apache-2.0"}
+dependencies = []
+
+[project.optional-dependencies]
+dashboard = ["starlette>=0.38.0", "uvicorn>=0.30.0"]
+example = ["anthropic>=0.50.0"]
+all = ["starlette>=0.38.0", "uvicorn>=0.30.0", "anthropic>=0.50.0"]
+
+[tool.setuptools.packages.find]
+include = ["recursive_improve*"]
+
+[tool.setuptools.package-data]
+recursive_improve = ["data/SKILL.md", "data/RATCHET_SKILL.md", "data/BENCHMARK_SKILL.md"]
+
+[project.scripts]
+recursive-improve = "recursive_improve.cli:main"

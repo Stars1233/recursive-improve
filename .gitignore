@@ -1,0 +1,21 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+dist/
+build/
+.eggs/
+*.egg
+.env
+.venv/
+venv/
+/eval/
+# Note: eval/benchmark_results.json should be committed in agent repos
+# for cross-branch dashboard visibility
+traces/
+*.sqlite
+*.db
+.DS_Store
+.recursive-improve/
+program.md
+uv.lock

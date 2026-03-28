@@ -1,0 +1,38 @@
+{
+  "session_id": "vague_request",
+  "timestamp": "2026-03-25T11:06:16.915150+00:00",
+  "duration_s": 3.69,
+  "success": true,
+  "error": null,
+  "output": "I'd be happy to help you check on your order! To look up your order, I'll need some information from you.\n\nI can help you in a couple of ways:\n\n1. **If you have your order ID**: I can look up the specific order details directly\n2. **If you don't have your order ID**: I can find all your orders using your account information (email, phone number, or username)\n\nWhich option works better for you, and what information can you provide?",
+  "feedback": null,
+  "git_branch": "main",
+  "git_commit": "4baf004",
+  "metadata": {
+    "scenario": "vague_request"
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a customer support chat bot for an online retailer called TechNova.\nYour job is to help users look up their account, orders, and cancel orders.\nBe helpful and brief in your responses.\nYou have access to a set of tools, but only use them when needed.\nIf you do not have enough information to use a tool correctly, ask a user follow up questions to get the required inputs.\nDo not call any of the tools unless you have the required data from a user.\n",
+      "timestamp": "2026-03-25T11:06:16.914977+00:00"
+    },
+    {
+      "role": "user",
+      "content": "I want to check on my order",
+      "timestamp": "2026-03-25T11:06:16.914997+00:00"
+    },
+    {
+      "role": "assistant",
+      "content": "I'd be happy to help you check on your order! To look up your order, I'll need some information from you.\n\nI can help you in a couple of ways:\n\n1. **If you have your order ID**: I can look up the specific order details directly\n2. **If you don't have your order ID**: I can find all your orders using your account information (email, phone number, or username)\n\nWhich option works better for you, and what information can you provide?",
+      "timestamp": "2026-03-25T11:06:16.915003+00:00",
+      "model": "claude-sonnet-4-20250514",
+      "provider": "anthropic",
+      "usage": {
+        "prompt_tokens": 826,
+        "completion_tokens": 107,
+        "total_tokens": 933
+      }
+    }
+  ]
+}
