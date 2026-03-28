@@ -33,7 +33,7 @@ Your agent runs. Every LLM call is captured. Your coding agent analyzes the trac
 ### 1. Install
 
 ```bash
-uv tool install "recursive-improve[all] @ git+https://github.com/halluton/setup-rec-imp.git"
+uv tool install "recursive-improve[all] @ git+https://github.com/kayba-ai/recursive-improve.git"
 ```
 
 Then in your agent's project directory:
@@ -50,7 +50,7 @@ This creates the `/recursive-improve` skill files and the `eval/traces/` directo
 Add the tracing dependency to your project:
 
 ```bash
-uv add "recursive-improve @ git+https://github.com/halluton/setup-rec-imp.git"
+uv add "recursive-improve @ git+https://github.com/kayba-ai/recursive-improve.git"
 ```
 
 Two lines. Your agent code stays unchanged, we just observe.
